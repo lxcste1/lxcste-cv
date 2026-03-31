@@ -10,7 +10,7 @@ export const translations = {
       role: "Desarrollador Front-End",
       stack: "ReactJS • NextJS • TypeScript",
       description:
-        "Creo experiencias digitales accesibles y de alto rendimiento. Actualmente trabajo en La Nación desarrollando librerías Frontend y nuevas features para mejorar la experiencia del usuario.",
+        "Creo experiencias digitales accesibles y de alto rendimiento. Creo experiencias digitales accesibles y de alto rendimiento. Desarrollo aplicaciones basadas en la colaboración de agentes y sub-agentes. Mi trabajo se centra en estructurar la lógica necesaria para que la IA pase de la conversación a la ejecución efectiva, optimizando la toma de decisiones en sistemas complejos.",
       location: "Buenos Aires, Argentina",
       cta: "Ver proyectos",
       contact: "Contactar",
@@ -177,7 +177,7 @@ export const translations = {
       role: "Front-End Developer",
       stack: "ReactJS • NextJS • TypeScript",
       description:
-        "I create accessible and high-performance digital experiences. Currently working at La Nación developing Frontend libraries and new features to improve user experience.",
+        "I create accessible, high-performance digital experiences. I develop applications based on agent and sub-agent collaboration. My work focuses on structuring the logic necessary for AI to move from conversation to effective execution, optimizing decision-making in complex systems.",
       location: "Buenos Aires, Argentina",
       cta: "View projects",
       contact: "Contact me",
