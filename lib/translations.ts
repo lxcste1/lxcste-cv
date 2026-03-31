@@ -10,7 +10,7 @@ export const translations = {
       role: "Desarrollador Front-End",
       stack: "ReactJS • NextJS • TypeScript",
       description:
-        "Creo experiencias digitales accesibles y de alto rendimiento. Creo experiencias digitales accesibles y de alto rendimiento. Desarrollo aplicaciones basadas en la colaboración de agentes y sub-agentes. Mi trabajo se centra en estructurar la lógica necesaria para que la IA pase de la conversación a la ejecución efectiva, optimizando la toma de decisiones en sistemas complejos.",
+        "Creo experiencias digitales accesibles y de alto rendimiento. Desarrollo aplicaciones basadas en la colaboración de agentes y sub-agentes. Mi trabajo se centra en estructurar la lógica necesaria para que la IA pase de la conversación a la ejecución efectiva, optimizando la toma de decisiones en sistemas complejos.",
       location: "Buenos Aires, Argentina",
       cta: "Ver proyectos",
       contact: "Contactar",
