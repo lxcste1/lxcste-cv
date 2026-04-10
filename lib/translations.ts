@@ -146,7 +146,7 @@ export const translations = {
             "Next.js",
             "TypeScript",
             "Tailwind CSS",
-            "Google Sheets",
+            "Supabase",
           ],
           url: "https://origendelsur.com.ar/",
           imageUrl:
@@ -313,7 +313,7 @@ export const translations = {
             "Next.js",
             "TypeScript",
             "Tailwind CSS",
-            "Google Sheets",
+            "Supabase",
           ],
           url: "https://origendelsur.com.ar/",
           imageUrl:
