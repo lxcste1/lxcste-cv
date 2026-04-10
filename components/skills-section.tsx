@@ -5,7 +5,7 @@ import { Code2, Wrench } from "lucide-react";
 
 const skillsData = {
   advanced: ["ReactJS", "NextJS", "TypeScript", "Tailwind CSS"],
-  intermediate: ["Firebase"],
+  intermediate: ["Firebase", "Supabase", "PostgreSQL"],
   basic: ["AngularJS", "NodeJS", "C", "Python", "PHP", "MySQL"],
 };
 
@@ -19,7 +19,6 @@ const toolsData = [
   "Figma",
   "Postman",
   "Strapi",
-  "Cursor",
 ];
 
 export function SkillsSection() {
@@ -30,7 +29,9 @@ export function SkillsSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center gap-3 mb-12">
           <Code2 className="h-6 w-6 text-primary" />
-          <h2 className="text-3xl font-bold text-foreground">{t.skills.title}</h2>
+          <h2 className="text-3xl font-bold text-foreground">
+            {t.skills.title}
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
