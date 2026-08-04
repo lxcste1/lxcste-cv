@@ -1,5 +1,24 @@
 @import 'tailwindcss';
 
+@theme {
+  --font-sans: var(--font-inter), Arial, sans-serif;
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-card: #ffffff;
+  --color-card-foreground: var(--ink);
+  --color-primary: var(--ink);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #eeeeea;
+  --color-secondary-foreground: var(--ink);
+  --color-muted: #eeeeea;
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--acid);
+  --color-accent-foreground: var(--ink);
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--ink);
+}
+
 :root {
   --ink: #101010;
   --paper: #f7f7f3;
