@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/lib/language-context";
 import {
   ArrowUpRight,
   Code2,
@@ -64,6 +65,8 @@ function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) 
 }
 
 export function Resume() {
+  const { language, setLanguage } = useLanguage();
+
   return (
     <div className="resume-shell">
       <header className="resume-nav">
@@ -73,6 +76,24 @@ export function Resume() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
+        <div className="language-switcher" aria-label="Language selector">
+          <button
+            type="button"
+            className={language === "es" ? "is-active" : ""}
+            onClick={() => setLanguage("es")}
+            aria-pressed={language === "es"}
+          >
+            ES
+          </button>
+          <button
+            type="button"
+            className={language === "en" ? "is-active" : ""}
+            onClick={() => setLanguage("en")}
+            aria-pressed={language === "en"}
+          >
+            EN
+          </button>
+        </div>
         <a className="availability" href="mailto:lucastello97@gmail.com">
           <span /> Available for opportunities
         </a>
