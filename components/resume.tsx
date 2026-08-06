@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/language-context";
+import type { ExperienceItem, Expertise, TechnologyCategory } from "@/types/resume";
 import {
   ArrowUpRight,
   Code2,
@@ -12,7 +13,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const expertise = [
+const expertise: Expertise = [
   "Frontend Architecture",
   "Design Systems",
   "Product Engineering",
@@ -21,7 +22,7 @@ const expertise = [
   "AI-Augmented Development",
 ];
 
-const experience = [
+const experience: ExperienceItem[] = [
   {
     company: "La Nacion",
     role: "Frontend Engineer",
@@ -48,7 +49,7 @@ const experience = [
   },
 ];
 
-const technologies = [
+const technologies: TechnologyCategory[] = [
   ["Frontend", "React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
   ["UI systems", "shadcn/ui", "Radix UI", "Storybook", "Design Systems", "CVA"],
   ["Data & state", "Supabase", "PostgreSQL", "Firebase", "Zustand", "React Query"],

@@ -6,6 +6,11 @@ const eslintConfig = tseslint.config(
   ...nextCoreWebVitals,
   ...nextTypescript,
   tseslint.configs.recommended,
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "error",
+    },
+  },
 );
 
 export default eslintConfig;

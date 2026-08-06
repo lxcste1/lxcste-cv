@@ -31,10 +31,10 @@ export default function ProjectsPage() {
                 key={index}
                 title={project.title}
                 description={project.description}
-                technologies={project.technologies as unknown as string[]}
+                technologies={project.technologies}
                 url={project.url}
                 imageUrl={project.imageUrl}
-                status={project.status as "active" | "development"}
+                status={project.status}
               />
             ))}
           </div>

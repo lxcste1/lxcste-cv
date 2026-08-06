@@ -5,15 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ExternalLink, Clock } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  technologies: string[];
-  url: string | null;
-  status: "active" | "development";
-  imageUrl?: string;
-}
+import type { ProjectCardProps } from "@/types/components/ProjectCardProps";
 
 export function ProjectCard({
   title,

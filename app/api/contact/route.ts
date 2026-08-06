@@ -1,18 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import type { ContactFormData } from "@/types/contact";
 
 function getResend(): Resend {
   if (!process.env.RESEND_API_KEY) {
     throw new Error("Missing RESEND_API_KEY environment variable");
   }
   return new Resend(process.env.RESEND_API_KEY);
-}
-
-interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
 }
 
 export async function POST(request: Request) {
