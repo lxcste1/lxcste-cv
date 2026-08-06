@@ -2,7 +2,7 @@
 
 import { useLanguage } from "@/lib/language-context";
 import { translations } from "@/lib/translations";
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 
 export function ContactInfo() {
   const { language } = useLanguage();

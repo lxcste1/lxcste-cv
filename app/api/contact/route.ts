@@ -1,7 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend(): Resend {
+  if (!process.env.RESEND_API_KEY) {
+    throw new Error("Missing RESEND_API_KEY environment variable");
+  }
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 interface ContactFormData {
   name: string;
@@ -32,6 +37,7 @@ export async function POST(request: Request) {
       );
     }
 
+    const resend = getResend();
     const { data, error } = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: ["lxcste@gmail.com"],
