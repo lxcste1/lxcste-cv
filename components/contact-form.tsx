@@ -1,17 +1,31 @@
 "use client";
 
 import { useState } from "react";
-import { useLanguage } from "@/lib/language-context";
-import { translations } from "@/lib/translations";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Send, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 
-export function ContactForm() {
-  const { language } = useLanguage();
-  const t = translations[language].contact.form;
+interface ContactFormLabels {
+  name: string;
+  namePlaceholder: string;
+  email: string;
+  emailPlaceholder: string;
+  subject: string;
+  subjectPlaceholder: string;
+  message: string;
+  messagePlaceholder: string;
+  send: string;
+  sending: string;
+  success: string;
+  error: string;
+}
 
+interface ContactFormProps {
+  labels: ContactFormLabels;
+}
+
+export function ContactForm({ labels }: Readonly<ContactFormProps>) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -68,13 +82,13 @@ export function ContactForm() {
             htmlFor="name"
             className="text-sm font-medium text-foreground"
           >
-            {t.name}
+            {labels.name}
           </label>
           <Input
             id="name"
             name="name"
             type="text"
-            placeholder={t.namePlaceholder}
+            placeholder={labels.namePlaceholder}
             value={formData.name}
             onChange={handleChange}
             required
@@ -86,13 +100,13 @@ export function ContactForm() {
             htmlFor="email"
             className="text-sm font-medium text-foreground"
           >
-            {t.email}
+            {labels.email}
           </label>
           <Input
             id="email"
             name="email"
             type="email"
-            placeholder={t.emailPlaceholder}
+            placeholder={labels.emailPlaceholder}
             value={formData.email}
             onChange={handleChange}
             required
@@ -106,13 +120,13 @@ export function ContactForm() {
           htmlFor="subject"
           className="text-sm font-medium text-foreground"
         >
-          {t.subject}
+          {labels.subject}
         </label>
         <Input
           id="subject"
           name="subject"
           type="text"
-          placeholder={t.subjectPlaceholder}
+          placeholder={labels.subjectPlaceholder}
           value={formData.subject}
           onChange={handleChange}
           required
@@ -125,12 +139,12 @@ export function ContactForm() {
           htmlFor="message"
           className="text-sm font-medium text-foreground"
         >
-          {t.message}
+          {labels.message}
         </label>
         <Textarea
           id="message"
           name="message"
-          placeholder={t.messagePlaceholder}
+          placeholder={labels.messagePlaceholder}
           value={formData.message}
           onChange={handleChange}
           required
@@ -142,14 +156,14 @@ export function ContactForm() {
       {status === "success" && (
         <div className="flex items-center gap-2 rounded-lg bg-green-500/10 border border-green-500/20 p-4 text-green-400">
           <CheckCircle2 className="h-5 w-5 shrink-0" />
-          <p className="text-sm">{t.success}</p>
+          <p className="text-sm">{labels.success}</p>
         </div>
       )}
 
       {status === "error" && (
         <div className="flex items-center gap-2 rounded-lg bg-destructive/10 border border-destructive/20 p-4 text-destructive">
           <AlertCircle className="h-5 w-5 shrink-0" />
-          <p className="text-sm">{t.error}</p>
+          <p className="text-sm">{labels.error}</p>
         </div>
       )}
 
@@ -161,12 +175,12 @@ export function ContactForm() {
         {status === "loading" ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            {t.sending}
+            {labels.sending}
           </>
         ) : (
           <>
             <Send className="mr-2 h-4 w-4" />
-            {t.send}
+            {labels.send}
           </>
         )}
       </Button>

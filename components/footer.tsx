@@ -1,10 +1,10 @@
-"use client";
-
-import { useLanguage } from "@/lib/language-context";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-export function Footer() {
-  const { t } = useLanguage();
+interface FooterProps {
+  rights: string;
+}
+
+export function Footer({ rights }: Readonly<FooterProps>) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -12,7 +12,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted-foreground text-sm">
-            © {currentYear} Lucas Tello. {t.footer.rights}
+            © {currentYear} Lucas Tello. {rights}
           </div>
 
           <div className="flex items-center gap-6">

@@ -1,3 +1,9 @@
+export interface ProjectCardLabels {
+  inDevelopment: string;
+  comingSoon: string;
+  viewProject: string;
+}
+
 export interface ProjectCardProps {
   title: string;
   description: string;
@@ -5,4 +11,5 @@ export interface ProjectCardProps {
   url: string | null;
   status: "active" | "development";
   imageUrl?: string;
+  labels: ProjectCardLabels;
 }

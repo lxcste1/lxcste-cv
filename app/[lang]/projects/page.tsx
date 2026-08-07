@@ -1,20 +1,23 @@
-"use client";
-
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { translations } from "@/lib/translations";
 import { ProjectCard } from "@/components/project-card";
-import { useLanguage } from "@/lib/language-context";
 
-export default function ProjectsPage() {
-  const { t } = useLanguage();
+export function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "en" }];
+}
+
+interface PageProps {
+  params: Promise<{ lang: string }>;
+}
+
+export default async function ProjectsPage({ params }: PageProps) {
+  const { lang } = await params;
+  const langKey = (lang === "es" ? "es" : "en") as "es" | "en";
+  const t = translations[langKey];
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <main className="pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          {/* Page Header */}
           <div className="mb-12 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               {t.projects.title}
@@ -24,7 +27,6 @@ export default function ProjectsPage() {
             </p>
           </div>
 
-          {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {t.projects.items.map((project, index) => (
               <ProjectCard
@@ -35,13 +37,16 @@ export default function ProjectsPage() {
                 url={project.url}
                 imageUrl={project.imageUrl}
                 status={project.status}
+                labels={{
+                  inDevelopment: t.projects.inDevelopment,
+                  comingSoon: t.projects.comingSoon,
+                  viewProject: t.projects.viewProject,
+                }}
               />
             ))}
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

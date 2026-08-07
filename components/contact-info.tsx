@@ -1,24 +1,29 @@
-"use client";
-
-import { useLanguage } from "@/lib/language-context";
-import { translations } from "@/lib/translations";
 import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 
-export function ContactInfo() {
-  const { language } = useLanguage();
-  const t = translations[language].contact.info;
+interface ContactInfoLabels {
+  title: string;
+  email: string;
+  location: string;
+  locationValue: string;
+  social: string;
+}
 
+interface ContactInfoProps {
+  labels: ContactInfoLabels;
+}
+
+export function ContactInfo({ labels }: Readonly<ContactInfoProps>) {
   const contactDetails = [
     {
       icon: Mail,
-      label: t.email,
+      label: labels.email,
       value: "lucastello97@gmail.com",
       href: "mailto:lucastello97@gmail.com",
     },
     {
       icon: MapPin,
-      label: t.location,
-      value: t.locationValue,
+      label: labels.location,
+      value: labels.locationValue,
       href: null,
     },
   ];
@@ -40,7 +45,7 @@ export function ContactInfo() {
     <div className="space-y-8">
       <div>
         <h3 className="text-lg font-semibold text-foreground mb-4">
-          {t.title}
+          {labels.title}
         </h3>
         <div className="space-y-4">
           {contactDetails.map((item) => (
@@ -68,7 +73,7 @@ export function ContactInfo() {
 
       <div>
         <h3 className="text-lg font-semibold text-foreground mb-4">
-          {t.social}
+          {labels.social}
         </h3>
         <div className="flex gap-3">
           {socialLinks.map((link) => (

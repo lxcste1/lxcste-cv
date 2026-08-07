@@ -165,6 +165,84 @@ export const translations = {
         },
       ],
     },
+    resume: {
+      nav: {
+        experience: "Experiencia",
+        projects: "Proyectos",
+        contact: "Contacto",
+      },
+      availability: "Disponible para oportunidades",
+      hero: {
+        eyebrow: "Ingeniero frontend / Buenos Aires, Argentina",
+        heading: "Construyendo productos digitales con sistemas frontend modernos.",
+        summary: "Soy Lucas Tello, Ingeniero Frontend con mas de 5 años de experiencia creando aplicaciones web escalables, librerias reutilizables de componentes y experiencias de producto con React, Next.js y TypeScript.",
+        cta: "Ver proyectos seleccionados",
+        contact: "Contactame",
+      },
+      currently: {
+        label: "Actualmente",
+        ariaLabel: "En este momento",
+        items: [
+          " Construyendo sistemas frontend compartidos en La Nacion",
+          " Desarrollando Slotify, un SaaS multi-tenant",
+          " Integrando IA al flujo de ingenieria",
+        ],
+      },
+      profile: {
+        eyebrow: "Perfil",
+        statement: "Combino pensamiento de producto con oficio frontend: desde arquitectura de componentes y design systems hasta performance, SEO y los detalles que hacen que una interfaz se sienta natural.",
+      },
+      openToRemote: "Abierto a oportunidades remotas",
+      experienceSection: {
+        eyebrow: "01 / Experiencia",
+        title: "Experiencia entregando interfaces utiles y escalables.",
+      },
+      expertise: {
+        eyebrow: "02 / Especialidad",
+        title: "Los problemas de ingenieria que disfruto resolver.",
+        items: [
+          "Arquitectura Frontend",
+          "Design Systems",
+          "Ingenieria de Producto",
+          "Performance y Core Web Vitals",
+          "SEO Tecnico",
+          "Desarrollo Aumentado con IA",
+        ],
+      },
+      ai: {
+        eyebrow: "03 / Ingenieria con IA",
+        heading: "La IA es parte de mi sistema de desarrollo, no una etiqueta.",
+        description: "Uso Specification Driven Development, OpenSpec, OpenCode y agentes especializados para hacer mas deliberados el planning, la implementacion, la documentacion y el review. El objetivo son mejores decisiones y software de mayor calidad, no atajos.",
+      },
+      projectsSection: {
+        eyebrow: "04 / Proyectos seleccionados",
+        title: "Proyectos construidos a partir del problema.",
+        flagship: {
+          label: "Proyecto principal / En desarrollo",
+          title: "Slotify",
+          description: "Una plataforma SaaS multi-tenant para negocios basados en turnos: centros de estetica, pilates y gimnasios. Diseñada desde cero con configuracion por organizacion, acceso por roles, reservas online y una experiencia administrativa enfocada en la operacion.",
+          details: { architecture: "Architecture", stack: "Stack", focus: "Focus", archValue: "Multi-tenant SaaS", stackValue: "Next.js / TypeScript / Supabase", focusValue: "Reusable systems / Product UX" },
+        },
+        rows: [
+          { title: "Origen del Sur", description: "Experiencia ecommerce enfocada en identidad visual, SEO y una compra sin friccion." },
+          { title: "Team Builder", description: "Aplicacion de gestion de equipos y partidos con una interfaz practica y centrada en el jugador." },
+        ],
+      },
+      technology: {
+        eyebrow: "05 / Herramientas",
+        title: "Tecnologias elegidas para entregar productos confiables.",
+      },
+      education: {
+        label: "Educacion",
+        degree: "Ingenieria en Informatica",
+        period: "UNDAV / 2019 - Actualidad",
+        foundation: "Base",
+        foundationRole: "Operaciones de Infraestructura",
+        foundationDesc: "Sistemas, disponibilidad y monitoreo",
+      },
+      cta: "Construyamos algo con criterio",
+      footerRole: "Ingeniero Frontend",
+    },
   },
   en: {
     nav: {
@@ -331,6 +409,84 @@ export const translations = {
           status: "development",
         },
       ],
+    },
+    resume: {
+      nav: {
+        experience: "Experience",
+        projects: "Projects",
+        contact: "Contact",
+      },
+      availability: "Available for opportunities",
+      hero: {
+        eyebrow: "Frontend engineer / Buenos Aires, Argentina",
+        heading: "Building considered digital products with modern frontend systems.",
+        summary: "I'm Lucas Tello, a Frontend Engineer with 5+ years of experience building scalable web applications, reusable component libraries and product experiences with React, Next.js and TypeScript.",
+        cta: "Explore selected work",
+        contact: "Get in touch",
+      },
+      currently: {
+        label: "Currently",
+        ariaLabel: "Current focus",
+        items: [
+          " Building shared frontend systems at La Nacion",
+          " Developing Slotify, a multi-tenant SaaS",
+          " Integrating AI into the engineering workflow",
+        ],
+      },
+      profile: {
+        eyebrow: "Profile",
+        statement: "I pair product thinking with frontend craft - from component architecture and design systems to performance, SEO and the details that make an interface feel inevitable.",
+      },
+      openToRemote: "Open to remote opportunities",
+      experienceSection: {
+        eyebrow: "01 / Experience",
+        title: "A track record of shipping useful, scalable interfaces.",
+      },
+      expertise: {
+        eyebrow: "02 / Expertise",
+        title: "The engineering problems I enjoy owning.",
+        items: [
+          "Frontend Architecture",
+          "Design Systems",
+          "Product Engineering",
+          "Performance & Core Web Vitals",
+          "Technical SEO",
+          "AI-Augmented Development",
+        ],
+      },
+      ai: {
+        eyebrow: "03 / AI Engineering",
+        heading: "AI is part of my development system, not a feature label.",
+        description: "I use Specification Driven Development, OpenSpec, OpenCode and specialized agents to make planning, implementation, documentation and review more deliberate. The goal is clearer decisions and higher-quality software, not shortcuts.",
+      },
+      projectsSection: {
+        eyebrow: "04 / Selected work",
+        title: "Projects built from the problem outward.",
+        flagship: {
+          label: "Flagship project / In development",
+          title: "Slotify",
+          description: "A multi-tenant SaaS platform for appointment-based businesses: beauty studios, pilates centers and gyms. Designed from the ground up around organization-level configuration, role-based access, online booking and an operations-focused admin experience.",
+          details: { architecture: "Architecture", stack: "Stack", focus: "Focus", archValue: "Multi-tenant SaaS", stackValue: "Next.js / TypeScript / Supabase", focusValue: "Reusable systems / Product UX" },
+        },
+        rows: [
+          { title: "Origen del Sur", description: "Commerce experience shaped around visual identity, SEO and a frictionless purchase path." },
+          { title: "Team Builder", description: "Team and match-management application with a practical, player-first interface." },
+        ],
+      },
+      technology: {
+        eyebrow: "05 / Toolkit",
+        title: "Tools chosen for dependable product delivery.",
+      },
+      education: {
+        label: "Education",
+        degree: "Computer Science Engineering",
+        period: "UNDAV / 2019 - Present",
+        foundation: "Foundation",
+        foundationRole: "Infrastructure Operations",
+        foundationDesc: "Systems, availability and monitoring",
+      },
+      cta: "Let's build something considered",
+      footerRole: "Frontend Engineer",
     },
   },
 } as const;
