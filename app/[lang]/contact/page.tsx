@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { translations } from "@/lib/translations";
-import { ContactForm } from "@/components/contact-form";
-import { ContactInfo } from "@/components/contact-info";
-import { FormSkeleton } from "@/components/form-skeleton";
+import { ContactForm } from "@/components/contact-form/ContactForm";
+import { ContactInfo } from "@/components/contact-info/ContactInfo";
+import { FormSkeleton } from "@/components/form-skeleton/FormSkeleton";
 
 export function generateStaticParams() {
   return [{ lang: "es" }, { lang: "en" }];

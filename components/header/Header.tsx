@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { Github, Linkedin } from "lucide-react";
-import { LanguageSwitcher } from "@/components/language-switcher";
-import { MobileMenu } from "@/components/mobile-menu";
+import { LanguageSwitcher } from "@/components/language-switcher/LanguageSwitcher";
+import { MobileMenu } from "@/components/mobile-menu/MobileMenu";
 
 interface HeaderProps {
   nav: { home: string; projects: string; contact: string };

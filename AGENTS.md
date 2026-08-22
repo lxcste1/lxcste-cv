@@ -46,7 +46,7 @@ The only active CSS file is `app/globals.css` (imported in `app/layout.tsx`). It
 - Some UI components may be unused — the main resume page uses custom CSS classes rather than shadcn components
 
 ## Gotchas
-- **Known lint violations**: `components/ui/carousel.tsx` (react-hooks/set-state-in-effect), `components/ui/sidebar.tsx` (react-hooks/purity via Math.random), `components/ui/use-mobile.tsx` (react-hooks/set-state-in-effect), `hooks/use-mobile.ts` + `hooks/use-toast.ts` + `components/ui/use-toast.ts` (unused vars, duplicate hooks). These are shadcn-generated code — do not modify unless replacing the component entirely.
+- **Known lint findings**: `components/project-card/ProjectCard.tsx` (`@next/next/no-img-element`; migration to `next/image` is out of scope), `components/ui/carousel.tsx` (react-hooks/set-state-in-effect), `components/ui/sidebar.tsx` (react-hooks/purity via Math.random), `hooks/useMobile.ts` (react-hooks/set-state-in-effect), and `hooks/useToast.ts` (unused vars). The latter four are shadcn-generated code — do not modify unless replacing the component entirely.
 - **Images are unoptimized** (`images.unoptimized: true`) — likely for static export compatibility.
 - The hardcoded `<html lang="en">` in `app/layout.tsx` doesn't match the default Spanish locale — be aware when adding SEO or a11y features.
 - `pnpm-workspace.yaml` only exists to allow `sharp` build; this is not a real monorepo.

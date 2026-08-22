@@ -1,6 +1,6 @@
 import { translations } from "@/lib/translations";
 import { localizedExperience, localizedTechnology } from "@/lib/resume-data";
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from "@/components/section-heading/SectionHeading";
 import {
   ArrowUpRight,
   Code2,

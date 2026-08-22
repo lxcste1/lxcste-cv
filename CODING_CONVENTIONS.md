@@ -139,10 +139,10 @@ Violating this protocol (e.g., using SSR for static marketing text, using CSR fo
 
 ## Component File Structure
 
-Every component SHALL live in its own folder under `components/ui/`. The folder structure for a component named `Foo` is:
+Application components SHALL live in their own folder under `components/`. The folder structure for a component named `Foo` is:
 
 ```
-components/ui/foo/
+components/foo/
 ├── Foo.tsx                  ← Component implementation (export only the component)
 ├── foo-styles.ts            ← CVA variants, if the component uses visual variants
 ├── __tests__/
@@ -151,6 +151,8 @@ components/ui/foo/
     └── Bar.tsx
 ```
 
+- `components/ui/` is reserved exclusively for shadcn/ui primitives. Preserve the generator-compatible flat `kebab-case` filenames in that directory.
+- Reusable hooks SHALL live in `hooks/` using `camelCase` filenames. Their tests SHALL be co-located under `hooks/__tests__/` until the hook has its own folder.
 - If CVA variants are shared across multiple components, they SHALL live in `utils/<name>-variants.ts`.
 - If a constant/mapping is used by only one component, it SHALL live in the component's folder (e.g., `status-styles.ts`).
 - If shared, it SHALL live in `utils/`.

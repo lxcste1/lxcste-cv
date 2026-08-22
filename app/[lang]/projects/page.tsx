@@ -1,5 +1,5 @@
 import { translations } from "@/lib/translations";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectCard } from "@/components/project-card/ProjectCard";
 
 export function generateStaticParams() {
   return [{ lang: "es" }, { lang: "en" }];

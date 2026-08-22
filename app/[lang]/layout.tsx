@@ -1,5 +1,5 @@
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
 import { translations } from "@/lib/translations";
 
 export default async function LangLayout({
