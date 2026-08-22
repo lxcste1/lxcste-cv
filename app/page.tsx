@@ -1,6 +1,5 @@
-import { Resume } from "@/components/resume";
+import { redirect } from "next/navigation";
 
-export default function HomePage() {
-  return <Resume />;
+export default function RootPage() {
+  redirect("/en");
 }
-
