@@ -5,85 +5,6 @@ export const translations = {
       projects: "Proyectos",
       contact: "Contacto",
     },
-    hero: {
-      greeting: "Hola, soy",
-      role: "Desarrollador Front-End",
-      stack: "ReactJS • NextJS • TypeScript",
-      description:
-        "Creo experiencias digitales accesibles y de alto rendimiento. Desarrollo aplicaciones basadas en la colaboración de agentes y sub-agentes. Mi trabajo se centra en estructurar la lógica necesaria para que la IA pase de la conversación a la ejecución efectiva, optimizando la toma de decisiones en sistemas complejos.",
-      location: "Buenos Aires, Argentina",
-      cta: "Ver proyectos",
-      contact: "Contactar",
-    },
-    about: {
-      title: "Sobre mí",
-      description:
-        "Soy un desarrollador Frontend con más de 4 años de experiencia construyendo aplicaciones web modernas. Me apasiona crear interfaces de usuario intuitivas y optimizadas.",
-    },
-    experience: {
-      title: "Experiencia",
-      present: "Presente",
-      jobs: [
-        {
-          company: "La Nación",
-          role: "Front-End Developer",
-          period: "Abril 2024 - Presente",
-          description:
-            "Creación y mantenimiento de librerías Frontend. Rediseño de Canchallena. Desarrollo de nuevas features para mejorar la experiencia del usuario.",
-          skills: ["ReactJS", "TypeScript", "Performance"],
-        },
-        {
-          company: "PinApp",
-          role: "Front-End Developer",
-          period: "Agosto 2023 - Enero 2024",
-          description:
-            "Soporte a tiendas ecommerce de Perú (PlazaVea, Vivanda). Desarrollo de componentes customizados para VTEX IO.",
-          skills: ["ReactJS", "VTEX IO", "Styled Components"],
-        },
-        {
-          company: "TOBS",
-          role: "Front-End Developer",
-          period: "Abril 2021 - Agosto 2023",
-          description:
-            "Soporte y desarrollo evolutivo a tiendas ecommerce. Migración de tiendas VTEX Legacy a VTEX IO. Consumo de APIs.",
-          skills: ["ReactJS", "NextJS", "Tailwind CSS"],
-        },
-        {
-          company: "Lumen",
-          role: "Infrastructure Operator",
-          period: "Junio 2018 - Abril 2021",
-          description:
-            "Administración de servidores Windows. Monitoreo de servidores físicos y virtuales. Virtualización con VMWare.",
-          skills: ["Windows Server", "VMWare", "Monitoreo"],
-        },
-      ],
-    },
-    skills: {
-      title: "Habilidades",
-      advanced: "Avanzado",
-      intermediate: "Intermedio",
-      basic: "Básico",
-      tools: "Herramientas",
-    },
-    education: {
-      title: "Educación",
-      degree: "Ingeniería en Informática",
-      university: "UNDAV",
-      period: "Julio 2019 - Presente",
-      certifications: "Certificaciones",
-      certs: [
-        {
-          name: "Full Stack Developer",
-          institution: "UTN",
-          period: "Febrero 2022 - Agosto 2022",
-        },
-        {
-          name: "Web Developer",
-          institution: "UTN",
-          period: "Julio 2017 - Noviembre 2017",
-        },
-      ],
-    },
     footer: {
       rights: "Todos los derechos reservados.",
     },
@@ -93,7 +14,6 @@ export const translations = {
       info: {
         title: "Información de contacto",
         email: "Email",
-        phone: "Teléfono",
         location: "Ubicación",
         locationValue: "Buenos Aires, Argentina",
         social: "Redes sociales",
@@ -166,12 +86,6 @@ export const translations = {
       ],
     },
     resume: {
-      nav: {
-        experience: "Experiencia",
-        projects: "Proyectos",
-        contact: "Contacto",
-      },
-      availability: "Disponible para oportunidades",
       hero: {
         eyebrow: "Ingeniero frontend / Buenos Aires, Argentina",
         heading: "Construyendo productos digitales con sistemas frontend modernos.",
@@ -241,7 +155,6 @@ export const translations = {
         foundationDesc: "Sistemas, disponibilidad y monitoreo",
       },
       cta: "Construyamos algo con criterio",
-      footerRole: "Ingeniero Frontend",
     },
   },
   en: {
@@ -249,85 +162,6 @@ export const translations = {
       home: "Home",
       projects: "Projects",
       contact: "Contact",
-    },
-    hero: {
-      greeting: "Hi, I'm",
-      role: "Front-End Developer",
-      stack: "ReactJS • NextJS • TypeScript",
-      description:
-        "I create accessible and high-performance digital experiences. I develop applications based on agent and sub-agent collaboration. My work focuses on structuring the logic necessary for AI to move from conversation to effective execution, optimizing decision-making in complex systems.",
-      location: "Buenos Aires, Argentina",
-      cta: "View projects",
-      contact: "Contact me",
-    },
-    about: {
-      title: "About me",
-      description:
-        "I'm a Frontend developer with over 4 years of experience building modern web applications. I'm passionate about creating intuitive and optimized user interfaces.",
-    },
-    experience: {
-      title: "Experience",
-      present: "Present",
-      jobs: [
-        {
-          company: "La Nación",
-          role: "Front-End Developer",
-          period: "April 2024 - Present",
-          description:
-            "Creating and maintaining Frontend libraries. Redesigning Canchallena. Developing new features to improve user experience.",
-          skills: ["ReactJS", "TypeScript", "Performance"],
-        },
-        {
-          company: "PinApp",
-          role: "Front-End Developer",
-          period: "August 2023 - January 2024",
-          description:
-            "Support for Peru ecommerce stores (PlazaVea, Vivanda). Development of custom components for VTEX IO.",
-          skills: ["ReactJS", "VTEX IO", "Styled Components"],
-        },
-        {
-          company: "TOBS",
-          role: "Front-End Developer",
-          period: "April 2021 - August 2023",
-          description:
-            "Support and evolutionary development for ecommerce stores. Migration from VTEX Legacy to VTEX IO. API consumption.",
-          skills: ["ReactJS", "NextJS", "Tailwind CSS"],
-        },
-        {
-          company: "Lumen",
-          role: "Infrastructure Operator",
-          period: "June 2018 - April 2021",
-          description:
-            "Windows server administration. Physical and virtual server monitoring. Virtualization with VMWare.",
-          skills: ["Windows Server", "VMWare", "Monitoring"],
-        },
-      ],
-    },
-    skills: {
-      title: "Skills",
-      advanced: "Advanced",
-      intermediate: "Intermediate",
-      basic: "Basic",
-      tools: "Tools",
-    },
-    education: {
-      title: "Education",
-      degree: "Computer Science Engineering",
-      university: "UNDAV",
-      period: "July 2019 - Present",
-      certifications: "Certifications",
-      certs: [
-        {
-          name: "Full Stack Developer",
-          institution: "UTN",
-          period: "February 2022 - August 2022",
-        },
-        {
-          name: "Web Developer",
-          institution: "UTN",
-          period: "July 2017 - November 2017",
-        },
-      ],
     },
     footer: {
       rights: "All rights reserved.",
@@ -338,7 +172,6 @@ export const translations = {
       info: {
         title: "Contact information",
         email: "Email",
-        phone: "Phone",
         location: "Location",
         locationValue: "Buenos Aires, Argentina",
         social: "Social media",
@@ -411,12 +244,6 @@ export const translations = {
       ],
     },
     resume: {
-      nav: {
-        experience: "Experience",
-        projects: "Projects",
-        contact: "Contact",
-      },
-      availability: "Available for opportunities",
       hero: {
         eyebrow: "Frontend engineer / Buenos Aires, Argentina",
         heading: "Building considered digital products with modern frontend systems.",
@@ -486,7 +313,6 @@ export const translations = {
         foundationDesc: "Systems, availability and monitoring",
       },
       cta: "Let's build something considered",
-      footerRole: "Frontend Engineer",
     },
   },
 } as const;

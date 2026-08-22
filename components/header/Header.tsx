@@ -69,7 +69,12 @@ export function Header({ nav, lang }: Readonly<HeaderProps>) {
             </div>
           </div>
 
-          <MobileMenu nav={nav} />
+          <div className="flex md:hidden items-center gap-3">
+            <Suspense fallback={<div className="bg-secondary rounded-full p-1 inline-flex gap-1"><button className="px-3 py-1 rounded-full text-sm font-medium text-muted-foreground">ES</button><button className="px-3 py-1 rounded-full text-sm font-medium text-muted-foreground">EN</button></div>}>
+              <LanguageSwitcher />
+            </Suspense>
+            <MobileMenu nav={nav} lang={lang} />
+          </div>
         </nav>
       </div>
     </header>
